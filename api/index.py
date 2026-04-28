@@ -28,4 +28,6 @@ def getPredict(passenger: Passenger):
     prediction = model.predict(input)
     result = int(prediction[0])
 
-    return result
+    return {
+        'prediction': result
+    }
